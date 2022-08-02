@@ -11,13 +11,13 @@ Value = dhanti
 
 PK TABEL
 ===============
-Distributor = 1## (Hasna)
-Pasok = 2## (Hasna)
-Buku = 3## (Hasna)
-Kategori = 4## (Hasna)
-Pembeli = 5## (Hasna)
-Transaksi = 6## (Dhanti)
-Kasir = 7## (Dhanti)
-Penjualan = 8## (Dhanti)
-Stok = 9## (Dhanti)
+Distributor = 1## 
+Pasok = 2## 
+Buku = 3## 
+Kategori = 4## 
+Pembeli = 5## 
+Transaksi = 6## 
+Kasir = 7## 
+Penjualan = 8## 
+Stok = 9## 
 
