@@ -1,0 +1,4829 @@
+{
+	"info": {
+		"_postman_id": "e8396456-e852-43aa-ad80-fc4291bfa69d",
+		"name": "TOKO BUKU BERLIN SERBA 1OOK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20544365"
+	},
+	"item": [
+		{
+			"name": "Buku",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw?keytubes=KEY297",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pegawai",
+								"pgw"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "KEY297"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw?keytubes=KEY297",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pegawai",
+										"pgw"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "KEY297"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:09:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1165"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_pegawai\": \"401\",\n            \"nama\": \"Calvin Antares\",\n            \"no_telpon\": \"2147483647\",\n            \"pekerjaan\": \"admin\",\n            \"status\": \"aktif\",\n            \"username\": \"calvin\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"402\",\n            \"nama\": \"Mahesa Angkasa\",\n            \"no_telpon\": \"2147483647\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"mahesa\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"403\",\n            \"nama\": \"Bayu Aji\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"bayu\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"404\",\n            \"nama\": \"Jinendra Asoka\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"pasif\",\n            \"username\": \"jinendra\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"405\",\n            \"nama\": \"Ayu Cantika L\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"ayu\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"406\",\n            \"nama\": \"Cici Lilac\",\n            \"no_telpon\": \"81211628\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"cici\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"407\",\n            \"nama\": \"Nana Nina\",\n            \"no_telpon\": \"81276123\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"nana\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"408\",\n            \"nama\": \"Bayu Edi\",\n            \"no_telpon\": \"8126199\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"bayu\",\n            \"password\": \"1234\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk?keytubes=dhanti&id_buku=103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"buku",
+								"bk"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_buku",
+									"value": "103"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk?keytubes=dhanti&id_buku=103",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"buku",
+										"bk"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_buku",
+											"value": "103"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:53:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_buku\": \"103\",\n        \"judul\": \"Matahari\",\n        \"pengarang\": \"Tere liye\",\n        \"penerbit\": \"Gramedia\",\n        \"tahun_terbit\": \"2016\",\n        \"stok\": \"10\",\n        \"harga\": \"100000\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_buku",
+									"value": "110",
+									"type": "text"
+								},
+								{
+									"key": "judul",
+									"value": "Pulang",
+									"type": "text"
+								},
+								{
+									"key": "pengarang",
+									"value": "Tere Liye",
+									"type": "text"
+								},
+								{
+									"key": "penerbit",
+									"value": "Gramedia",
+									"type": "text"
+								},
+								{
+									"key": "tahun_terbit",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "stok",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "100000",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"buku",
+								"bk"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_buku",
+											"value": "110",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Pulang",
+											"type": "text"
+										},
+										{
+											"key": "pengarang",
+											"value": "Tere Liye",
+											"type": "text"
+										},
+										{
+											"key": "penerbit",
+											"value": "Gramedia",
+											"type": "text"
+										},
+										{
+											"key": "tahun_terbit",
+											"value": "2020",
+											"type": "text"
+										},
+										{
+											"key": "stok",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "harga",
+											"value": "100000",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"buku",
+										"bk"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 06:59:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_buku",
+									"value": "109",
+									"type": "text"
+								},
+								{
+									"key": "judul",
+									"value": "Pergi",
+									"type": "text"
+								},
+								{
+									"key": "pengarang",
+									"value": "Tere Liye",
+									"type": "text"
+								},
+								{
+									"key": "penerbit",
+									"value": "Gramedia",
+									"type": "text"
+								},
+								{
+									"key": "tahun_terbit",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "stok",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "100000",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"buku",
+								"bk"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_buku",
+											"value": "109",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Pergi",
+											"type": "text"
+										},
+										{
+											"key": "pengarang",
+											"value": "Tere Liye",
+											"type": "text"
+										},
+										{
+											"key": "penerbit",
+											"value": "Gramedia",
+											"type": "text"
+										},
+										{
+											"key": "tahun_terbit",
+											"value": "2020",
+											"type": "text"
+										},
+										{
+											"key": "stok",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "harga",
+											"value": "100000",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"buku",
+										"bk"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:01:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "92"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Buku Dengan id_buku 109 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_buku",
+									"value": "110",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"buku",
+								"bk"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_buku",
+											"value": "110",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/buku/bk",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"buku",
+										"bk"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:04:09 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data Buku Dengan id_buku 110 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Kategori",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat?keytubes=KEY297",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"kategori",
+								"kat"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "KEY297"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat?keytubes=KEY297",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"kategori",
+										"kat"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "KEY297"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:06:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1513"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_kategori\": \"201\",\n            \"judul\": \"Bumi\",\n            \"pengarang\": \"Tere Liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2014\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"Best Selling\",\n            \"tanggal\": \"2022-07-05\"\n        },\n        {\n            \"id_kategori\": \"202\",\n            \"judul\": \"Bulan\",\n            \"pengarang\": \"Tere liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2015\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"Best Selling\",\n            \"tanggal\": \"2022-07-05\"\n        },\n        {\n            \"id_kategori\": \"203\",\n            \"judul\": \"Matahari\",\n            \"pengarang\": \"Tere liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2016\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"Best Selling\",\n            \"tanggal\": \"2022-07-05\"\n        },\n        {\n            \"id_kategori\": \"204\",\n            \"judul\": \"Bintang\",\n            \"pengarang\": \"Tere Liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2017\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"Best Selling\",\n            \"tanggal\": \"2022-07-04\"\n        },\n        {\n            \"id_kategori\": \"205\",\n            \"judul\": \"Komet\",\n            \"pengarang\": \"Tere liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2018\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"Best Selling\",\n            \"tanggal\": \"2022-07-05\"\n        },\n        {\n            \"id_kategori\": \"206\",\n            \"judul\": \"Si Putih\",\n            \"pengarang\": \"Tere liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2019\",\n            \"jenis_kategori\": \"novel\",\n            \"deskripsi\": \"best selling\",\n            \"tanggal\": \"2020-08-08\"\n        },\n        {\n            \"id_kategori\": \"207\",\n            \"judul\": \"Hujan\",\n            \"pengarang\": \"Tere liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2020\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"best selling\",\n            \"tanggal\": \"2022-07-30\"\n        },\n        {\n            \"id_kategori\": \"208\",\n            \"judul\": \"Si Putih\",\n            \"pengarang\": \"Tere liye\",\n            \"penerbit\": \"Gramedia\",\n            \"tahun_terbit\": \"2019\",\n            \"jenis_kategori\": \"Novel\",\n            \"deskripsi\": \"Best Selling Novel\",\n            \"tanggal\": \"2022-07-29\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat?keytubes=dhanti&id_kategori=203",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"kategori",
+								"kat"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_kategori",
+									"value": "203"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat?keytubes=dhanti&id_kategori=203",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"kategori",
+										"kat"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_kategori",
+											"value": "203"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:08:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "161"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_kategori\": \"203\",\n        \"id_buku2\": \"103\",\n        \"jenis_kategori\": \"Novel\",\n        \"deskripsi\": \"Best Selling\",\n        \"tanggal\": \"2022-07-05\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_kategori",
+									"value": "209",
+									"type": "text"
+								},
+								{
+									"key": "id_buku2",
+									"value": "109",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kategori",
+									"value": "Novel",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Best Selling",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2022-07-21",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"kategori",
+								"kat"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_kategori",
+											"value": "209",
+											"type": "text"
+										},
+										{
+											"key": "id_buku2",
+											"value": "109",
+											"type": "text"
+										},
+										{
+											"key": "jenis_kategori",
+											"value": "Novel",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "Best Selling",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2022-07-21",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"kategori",
+										"kat"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:12:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_kategori",
+									"value": "209",
+									"type": "text"
+								},
+								{
+									"key": "id_buku2",
+									"value": "109",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kategori",
+									"value": "Novel",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Best Selling",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2022-08-21",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"kategori",
+								"kat"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_kategori",
+											"value": "209",
+											"type": "text"
+										},
+										{
+											"key": "id_buku2",
+											"value": "109",
+											"type": "text"
+										},
+										{
+											"key": "jenis_kategori",
+											"value": "Novel",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "Best Selling",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2022-08-21",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"kategori",
+										"kat"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:15:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "100"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data kategori Dengan id_kategori 209 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_kategori",
+									"value": "209",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"kategori",
+								"kat"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_kategori",
+											"value": "209",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/kategori/kat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"kategori",
+										"kat"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:16:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "101"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data kategori Dengan id_kategori 209 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users?keytubes=dhanti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"users",
+								"users"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users?keytubes=dhanti",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"users",
+										"users"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:22:39 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1245"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_users\": \"301\",\n            \"username\": \"calvin\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"1\",\n            \"nama\": \"Calvin Antares\",\n            \"no_telpon\": \"2147483647\",\n            \"pekerjaan\": \"admin\"\n        },\n        {\n            \"id_users\": \"302\",\n            \"username\": \"mahesa\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"2\",\n            \"nama\": \"Mahesa Angkasa\",\n            \"no_telpon\": \"2147483647\",\n            \"pekerjaan\": \"kasir\"\n        },\n        {\n            \"id_users\": \"303\",\n            \"username\": \"bayu\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"2\",\n            \"nama\": \"Bayu Aji\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\"\n        },\n        {\n            \"id_users\": \"304\",\n            \"username\": \"jinendra\",\n            \"password\": \"1234\",\n            \"status\": \"pasif\",\n            \"level\": \"2\",\n            \"nama\": \"Jinendra Asoka\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\"\n        },\n        {\n            \"id_users\": \"305\",\n            \"username\": \"ayu\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"2\",\n            \"nama\": \"Ayu Cantika L\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\"\n        },\n        {\n            \"id_users\": \"306\",\n            \"username\": \"cici\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"2\",\n            \"nama\": \"Cici Lilac\",\n            \"no_telpon\": \"81211628\",\n            \"pekerjaan\": \"kasir\"\n        },\n        {\n            \"id_users\": \"307\",\n            \"username\": \"nana\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"2\",\n            \"nama\": \"Nana Nina\",\n            \"no_telpon\": \"81276123\",\n            \"pekerjaan\": \"kasir\"\n        },\n        {\n            \"id_users\": \"303\",\n            \"username\": \"bayu\",\n            \"password\": \"1234\",\n            \"status\": \"aktif\",\n            \"level\": \"2\",\n            \"nama\": \"Bayu Edi\",\n            \"no_telpon\": \"8126199\",\n            \"pekerjaan\": \"kasir\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users?keytubes=dhanti&id_users=303",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"users",
+								"users"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_users",
+									"value": "303"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users?keytubes=dhanti&id_users=303",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"users",
+										"users"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_users",
+											"value": "303"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:23:54 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "131"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_users\": \"303\",\n        \"username\": \"bayu\",\n        \"password\": \"1234\",\n        \"status\": \"aktif\",\n        \"level\": \"2\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_users",
+									"value": "309",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "kyle",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Aktif",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"users",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_users",
+											"value": "309",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "kyle",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Aktif",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"users",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:41:38 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_users",
+									"value": "309",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "citra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Aktif",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"users",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_users",
+											"value": "309",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "citra",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Aktif",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"users",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:30:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Users Dengan id_users 309 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_users",
+									"value": "309",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"users",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_users",
+											"value": "309",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"users",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:37:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data Users Dengan id_users 309 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pegawai",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw?keytubes=dhanti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pegawai",
+								"pgw"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw?keytubes=dhanti",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pegawai",
+										"pgw"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:38:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1165"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_pegawai\": \"401\",\n            \"nama\": \"Calvin Antares\",\n            \"no_telpon\": \"2147483647\",\n            \"pekerjaan\": \"admin\",\n            \"status\": \"aktif\",\n            \"username\": \"calvin\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"402\",\n            \"nama\": \"Mahesa Angkasa\",\n            \"no_telpon\": \"2147483647\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"mahesa\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"403\",\n            \"nama\": \"Bayu Aji\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"bayu\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"404\",\n            \"nama\": \"Jinendra Asoka\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"pasif\",\n            \"username\": \"jinendra\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"405\",\n            \"nama\": \"Ayu Cantika L\",\n            \"no_telpon\": \"81237137\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"ayu\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"406\",\n            \"nama\": \"Cici Lilac\",\n            \"no_telpon\": \"81211628\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"cici\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"407\",\n            \"nama\": \"Nana Nina\",\n            \"no_telpon\": \"81276123\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"nana\",\n            \"password\": \"1234\"\n        },\n        {\n            \"id_pegawai\": \"408\",\n            \"nama\": \"Bayu Edi\",\n            \"no_telpon\": \"8126199\",\n            \"pekerjaan\": \"kasir\",\n            \"status\": \"aktif\",\n            \"username\": \"bayu\",\n            \"password\": \"1234\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw?keytubes=dhanti&id_pegawai=403",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pegawai",
+								"pgw"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_pegawai",
+									"value": "403"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw?keytubes=dhanti&id_pegawai=403",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pegawai",
+										"pgw"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_pegawai",
+											"value": "403"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:39:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "147"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_pegawai\": \"403\",\n        \"id_users2\": \"303\",\n        \"nama\": \"Bayu Aji\",\n        \"no_telpon\": \"81237137\",\n        \"pekerjaan\": \"kasir\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pegawai",
+									"value": "409",
+									"type": "text"
+								},
+								{
+									"key": "id_users2",
+									"value": "309",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Kyle Jener",
+									"type": "text"
+								},
+								{
+									"key": "no_telpon",
+									"value": "081243612",
+									"type": "text"
+								},
+								{
+									"key": "pekerjaan",
+									"value": "S1",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pegawai",
+								"pgw"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_pegawai",
+											"value": "409",
+											"type": "text"
+										},
+										{
+											"key": "id_users2",
+											"value": "309",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "Kyle Jener",
+											"type": "text"
+										},
+										{
+											"key": "no_telpon",
+											"value": "081243612",
+											"type": "text"
+										},
+										{
+											"key": "pekerjaan",
+											"value": "S1",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pegawai",
+										"pgw"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:42:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pegawai",
+									"value": "409",
+									"type": "text"
+								},
+								{
+									"key": "id_users2",
+									"value": "309",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Kyle Jenner",
+									"type": "text"
+								},
+								{
+									"key": "no_telpon",
+									"value": "081243612",
+									"type": "text"
+								},
+								{
+									"key": "pekerjaan",
+									"value": "S1",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pegawai",
+								"pgw"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_pegawai",
+											"value": "409",
+											"type": "text"
+										},
+										{
+											"key": "id_users2",
+											"value": "309",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "Kyle Jenner",
+											"type": "text"
+										},
+										{
+											"key": "no_telpon",
+											"value": "081243612",
+											"type": "text"
+										},
+										{
+											"key": "pekerjaan",
+											"value": "S1",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pegawai",
+										"pgw"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:43:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Pegawai Dengan id_pegawai 409 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_users",
+									"value": "309",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/users/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"users",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_pegawai",
+											"value": "409",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pegawai/pgw",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pegawai",
+										"pgw"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:45:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data Pegawai Dengan id_pegawai 409 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pembeli",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl?keytubes=dhanti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pembeli",
+								"pbl"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl?keytubes=dhanti",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pembeli",
+										"pbl"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 07:47:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "724"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_pembeli\": \"501\",\n            \"nama_pembeli\": \"Davin\",\n            \"no_telpon\": \"821000898\",\n            \"alamat\": \"Bandung\",\n            \"email\": \"davin@gmmail.com\"\n        },\n        {\n            \"id_pembeli\": \"502\",\n            \"nama_pembeli\": \"Clara\",\n            \"no_telpon\": \"821000823\",\n            \"alamat\": \"Bandung\",\n            \"email\": \"clara@gmmail.com\"\n        },\n        {\n            \"id_pembeli\": \"503\",\n            \"nama_pembeli\": \"Dara\",\n            \"no_telpon\": \"821000814\",\n            \"alamat\": \"Bandung\",\n            \"email\": \"dara@gmmail.com\"\n        },\n        {\n            \"id_pembeli\": \"504\",\n            \"nama_pembeli\": \"Renata\",\n            \"no_telpon\": \"821000867\",\n            \"alamat\": \"Bandung\",\n            \"email\": \"renata@gmmail.com\"\n        },\n        {\n            \"id_pembeli\": \"505\",\n            \"nama_pembeli\": \"Asep\",\n            \"no_telpon\": \"821000835\",\n            \"alamat\": \"Jakarta\",\n            \"email\": \"asep@gmmail.com\"\n        },\n        {\n            \"id_pembeli\": \"506\",\n            \"nama_pembeli\": \"Tika\",\n            \"no_telpon\": \"8126166\",\n            \"alamat\": \"Bogor\",\n            \"email\": \"tika@gmail.com\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl?keytubes=dhanti&id_pembeli=503",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pembeli",
+								"pbl"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_pembeli",
+									"value": "503"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl?keytubes=dhanti&id_pembeli=503",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pembeli",
+										"pbl"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_pembeli",
+											"value": "503"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:11:03 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_pembeli\": \"503\",\n        \"nama_pembeli\": \"Dara\",\n        \"no_telpon\": \"821000814\",\n        \"alamat\": \"Bandung\",\n        \"email\": \"dara@gmmail.com\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pembeli",
+									"value": "507",
+									"type": "text"
+								},
+								{
+									"key": "nama_pembeli",
+									"value": "Linda",
+									"type": "text"
+								},
+								{
+									"key": "no_telpon",
+									"value": "081243612",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Bekasi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "linda@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pembeli",
+								"pbl"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_pembeli",
+											"value": "507",
+											"type": "text"
+										},
+										{
+											"key": "nama_pembeli",
+											"value": "Linda",
+											"type": "text"
+										},
+										{
+											"key": "no_telpon",
+											"value": "081243612",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "Bekasi",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "linda@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pembeli",
+										"pbl"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:18:52 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pembeli",
+									"value": "507",
+									"type": "text"
+								},
+								{
+									"key": "nama_pembeli",
+									"value": "Linda",
+									"type": "text"
+								},
+								{
+									"key": "no_telpon",
+									"value": "08612165",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Bekasi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "linda@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pembeli",
+								"pbl"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_pembeli",
+											"value": "507",
+											"type": "text"
+										},
+										{
+											"key": "nama_pembeli",
+											"value": "Linda",
+											"type": "text"
+										},
+										{
+											"key": "no_telpon",
+											"value": "08612165",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "Bekasi",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "linda@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pembeli",
+										"pbl"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:19:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data pembeli Dengan id_pembeli 507 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pembeli",
+									"value": "409",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"pembeli",
+								"pbl"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_pembeli",
+											"value": "409",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/pembeli/pbl",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"pembeli",
+										"pbl"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:21:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data pembeli Dengan id_pembeli 409 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transaksi",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans?keytubes=dhanti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"transaksi",
+								"trans"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans?keytubes=dhanti",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"transaksi",
+										"trans"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:22:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "761"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_transaksi\": \"601\",\n            \"tanggal\": \"2022-09-02\",\n            \"nama_pembeli\": \"Dara\",\n            \"nama\": \"Cici Lilac\",\n            \"judul\": \"Bulan\",\n            \"jumlah_buku\": \"1\",\n            \"total\": \"100000\"\n        },\n        {\n            \"id_transaksi\": \"602\",\n            \"tanggal\": \"2022-09-01\",\n            \"nama_pembeli\": \"Clara\",\n            \"nama\": \"Mahesa Angkasa\",\n            \"judul\": \"Bulan\",\n            \"jumlah_buku\": \"1\",\n            \"total\": \"100000\"\n        },\n        {\n            \"id_transaksi\": \"603\",\n            \"tanggal\": \"2022-09-01\",\n            \"nama_pembeli\": \"Dara\",\n            \"nama\": \"Bayu Aji\",\n            \"judul\": \"Matahari\",\n            \"jumlah_buku\": \"1\",\n            \"total\": \"100000\"\n        },\n        {\n            \"id_transaksi\": \"604\",\n            \"tanggal\": \"2022-09-01\",\n            \"nama_pembeli\": \"Renata\",\n            \"nama\": \"Jinendra Asoka\",\n            \"judul\": \"Bintang\",\n            \"jumlah_buku\": \"1\",\n            \"total\": \"100000\"\n        },\n        {\n            \"id_transaksi\": \"605\",\n            \"tanggal\": \"2022-09-01\",\n            \"nama_pembeli\": \"Asep\",\n            \"nama\": \"Ayu Cantika L\",\n            \"judul\": \"Komet\",\n            \"jumlah_buku\": \"1\",\n            \"total\": \"100000\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans?keytubes=dhanti&id_transaksi=603",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"transaksi",
+								"trans"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_transaksi",
+									"value": "603"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans?keytubes=dhanti&id_transaksi=603",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"transaksi",
+										"trans"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_transaksi",
+											"value": "603"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:24:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_transaksi\": \"603\",\n        \"tanggal\": \"2022-09-01\",\n        \"nama_pembeli\": \"Dara\",\n        \"nama\": \"Bayu Aji\",\n        \"judul\": \"Matahari\",\n        \"jumlah_buku\": \"1\",\n        \"total\": \"100000\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_transaksi",
+									"value": "507",
+									"type": "text"
+								},
+								{
+									"key": "id_buku",
+									"value": "106",
+									"type": "text"
+								},
+								{
+									"key": "id_pegawai",
+									"value": "407",
+									"type": "text"
+								},
+								{
+									"key": "id_pembeli",
+									"value": "506",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_buku",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "100000",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2022-07-01",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"transaksi",
+								"trans"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_transaksi",
+											"value": "507",
+											"type": "text"
+										},
+										{
+											"key": "id_buku",
+											"value": "106",
+											"type": "text"
+										},
+										{
+											"key": "id_pegawai",
+											"value": "407",
+											"type": "text"
+										},
+										{
+											"key": "id_pembeli",
+											"value": "506",
+											"type": "text"
+										},
+										{
+											"key": "jumlah_buku",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "total",
+											"value": "100000",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2022-07-01",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"transaksi",
+										"trans"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:27:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_transaksi",
+									"value": "507",
+									"type": "text"
+								},
+								{
+									"key": "id_buku",
+									"value": "106",
+									"type": "text"
+								},
+								{
+									"key": "id_pegawai",
+									"value": "407",
+									"type": "text"
+								},
+								{
+									"key": "id_pembeli",
+									"value": "506",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_buku",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "100000",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2022-07-02",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"transaksi",
+								"trans"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_transaksi",
+											"value": "507",
+											"type": "text"
+										},
+										{
+											"key": "id_buku",
+											"value": "106",
+											"type": "text"
+										},
+										{
+											"key": "id_pegawai",
+											"value": "407",
+											"type": "text"
+										},
+										{
+											"key": "id_pembeli",
+											"value": "506",
+											"type": "text"
+										},
+										{
+											"key": "jumlah_buku",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "total",
+											"value": "100000",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2022-07-02",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"transaksi",
+										"trans"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:28:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "102"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data transaksi Dengan id_transaksi 507 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_transaksi",
+									"value": "605",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"transaksi",
+								"trans"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_transaksi",
+											"value": "605",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/transaksi/trans",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"transaksi",
+										"trans"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:29:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "103"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data Transaksi Dengan id_transaksi 605 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Penjualan",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual?keytubes=dhanti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"penjualan",
+								"jual"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual?keytubes=dhanti",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"penjualan",
+										"jual"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:36:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "554"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id_penjualan\": \"701\",\n            \"id_transaksi\": \"601\",\n            \"judul\": \"Bulan\",\n            \"jumlah_terjual\": \"5\",\n            \"pemasukan\": \"500000\",\n            \"tanggal\": \"2022-09-01\"\n        },\n        {\n            \"id_penjualan\": \"702\",\n            \"id_transaksi\": \"602\",\n            \"judul\": \"Bulan\",\n            \"jumlah_terjual\": \"5\",\n            \"pemasukan\": \"500000\",\n            \"tanggal\": \"2022-10-07\"\n        },\n        {\n            \"id_penjualan\": \"703\",\n            \"id_transaksi\": \"603\",\n            \"judul\": \"Matahari\",\n            \"jumlah_terjual\": \"5\",\n            \"pemasukan\": \"500000\",\n            \"tanggal\": \"2022-11-07\"\n        },\n        {\n            \"id_penjualan\": \"704\",\n            \"id_transaksi\": \"604\",\n            \"judul\": \"Bintang\",\n            \"jumlah_terjual\": \"5\",\n            \"pemasukan\": \"500000\",\n            \"tanggal\": \"2022-12-07\"\n        }\n    ],\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual?keytubes=dhanti&id_penjualan=703",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"penjualan",
+								"jual"
+							],
+							"query": [
+								{
+									"key": "keytubes",
+									"value": "dhanti"
+								},
+								{
+									"key": "id_penjualan",
+									"value": "703"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual?keytubes=dhanti&id_penjualan=703",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"penjualan",
+										"jual"
+									],
+									"query": [
+										{
+											"key": "keytubes",
+											"value": "dhanti"
+										},
+										{
+											"key": "id_penjualan",
+											"value": "703"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:38:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id_penjualan\": \"703\",\n        \"id_transaksi\": \"603\",\n        \"jumlah_terjual\": \"5\",\n        \"pemasukan\": \"500000\",\n        \"tanggal\": \"2022-11-07\"\n    },\n    \"status\": \"success\",\n    \"response_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Tambah",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_penjualan",
+									"value": "705",
+									"type": "text"
+								},
+								{
+									"key": "id_transaksi",
+									"value": "507",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_terjual",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "pemasukan",
+									"value": "500000",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2022-07-01",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"penjualan",
+								"jual"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tambah",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_penjualan",
+											"value": "705",
+											"type": "text"
+										},
+										{
+											"key": "id_transaksi",
+											"value": "507",
+											"type": "text"
+										},
+										{
+											"key": "jumlah_terjual",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "pemasukan",
+											"value": "500000",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2022-07-01",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"penjualan",
+										"jual"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:41:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Berhasil Ditambahkan\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_penjualan",
+									"value": "705",
+									"type": "text"
+								},
+								{
+									"key": "id_transaksi",
+									"value": "507",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_terjual",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "pemasukan",
+									"value": "500000",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2022-07-04",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"penjualan",
+								"jual"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_penjualan",
+											"value": "705",
+											"type": "text"
+										},
+										{
+											"key": "id_transaksi",
+											"value": "507",
+											"type": "text"
+										},
+										{
+											"key": "jumlah_terjual",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "pemasukan",
+											"value": "500000",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2022-07-04",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"penjualan",
+										"jual"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:42:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "102"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 201,\n    \"message\": \"Data Penjualan Dengan id_penjualan 705 Berhasil Diubah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "semangat",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tubes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_penjualan",
+									"value": "705",
+									"type": "text"
+								},
+								{
+									"key": "keytubes",
+									"value": "dhanti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tubes_pemrograman3-main",
+								"tokobuku",
+								"API",
+								"penjualan",
+								"jual"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Hapus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_penjualan",
+											"value": "705",
+											"type": "text"
+										},
+										{
+											"key": "keytubes",
+											"value": "dhanti",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/tubes_pemrograman3-main/tokobuku/API/penjualan/jual",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"tubes_pemrograman3-main",
+										"tokobuku",
+										"API",
+										"penjualan",
+										"jual"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Aug 2022 08:43:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "103"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"response_code\": 200,\n    \"message\": \"Data Penjualan Dengan id_penjualan 705 Berhasil Dihapus\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
