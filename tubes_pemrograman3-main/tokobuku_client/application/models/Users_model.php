@@ -82,4 +82,9 @@ class Users_model extends CI_Model
 
             return $result;
           }
+
+    //       public function lihat_username($username){
+	// 	    $query = $this->db->get_where($this->_guzzle, ['username' => $username]);
+	// 	    return $query->row();
+	// }
 }
